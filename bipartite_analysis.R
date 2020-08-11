@@ -31,7 +31,7 @@ calc_chi <- function(df_in,caption_in) {
 }
 
 
-df <- read.csv("C:/Users/acarlier/Desktop/R_bipartite/bipartite_results_screen_source_duplicates_removed-SQ05062020.csv", sep=";")
+df <- read.csv("bipartite_data.csv", sep=";")
 #removing observations where there is no or ambiguous inhibition score
 df <- subset(df, df$inhibition.score != "NaN")
 
